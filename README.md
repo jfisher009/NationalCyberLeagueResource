@@ -130,4 +130,4 @@ A list of resources that are useful for the National Cyber League Competition. T
 
 ## Other Tips
 - If I don't know how to do a challenge, I type in the name and append 'CTF' at the end. Sometime it'll return a writeup of a similar challenge done in a CTF that helps complete the challenge. -Ed
-- Pay close attention to the title of the challenge. It's usually a hint at how to solve the problem. 
+- Pay close attention to the title of the challenge. It's usually a hint at how to solve the problem. - Julian
