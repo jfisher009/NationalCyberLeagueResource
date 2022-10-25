@@ -4,12 +4,15 @@ A list of resources that are useful for the National Cyber League Competition. T
 ## Open Source Inteligence
 - [Google](google.com): Google should almost always be your first stop for OSINT questions. 
   - Get familiar with Google's more advanced search operators. [Here](https://static.semrush.com/blog/uploads/files/39/12/39121580a18160d3587274faed6323e2.pdf) is a handy cheat sheet.
+  - Google reverse image search is another great tool to help track down where a photo came from.
 - [Wigle](wigle.net): Find and identify wifi networks. 
+- [EXIF](https://exif.tools/): Exif tools can help reveal file meta data that can give answers out for easy OSINT questions.
 
 ## Cryptography
 - [CyberChef](https://gchq.github.io/CyberChef/): Convert between number bases and encoding schemes
 - [Rumkin](https://rumkin.com/tools/cipher/rail-fence/): Encode/Decode railfence ciphers
 - [dcode.fr](https://www.dcode.fr/en) Encode/Decode many ciphers. This website is usually one of the first sites on google when you google for a specific cipher.
+- [Cipher Identifier](https://www.boxentriq.com/code-breaking/cipher-identifier): Some websites can help you identify waht cipher is being used on a given cipher text. There are many good options. But, I have attached one here. 
 - [Strings](https://www.howtogeek.com/427805/how-to-use-the-strings-command-on-linux/) The linux strings command will search through any file type and return strings of characters it found. Useful for finding flags in arbitrary file types. 
 - [Digital Invisible Ink Toolkit](https://diit.sourceforge.net/): Find messages that are hidden in pictures. Many steganography questions use this tool.
 - [Steghide](https://www.kali.org/tools/steghide/): Another way to find messages hidden in a picture.
@@ -18,18 +21,28 @@ A list of resources that are useful for the National Cyber League Competition. T
 ## Password Cracking
 - [Hash Generator](https://www.browserling.com/tools/all-hashes): You will probably be asked to compute the hashes of some passwords. This site generates many hashes all at once. Select what you need and paste it into the answer box. 
 - [Hashes.com](hashes.com): Lookup known hash values here. It is a good first step on any password cracking questions. Often, even a couple of the hard passwords can be found here.
+- [CrackStation](https://crackstation.net/): Similar to hashes.com. Lookup hashes and see if there is a known password.
+- [hashkill.io](hashkill.io): Similar to the last two. Used to lookup passsword hashes. 
 - [Hashcat](https://www.kali.org/tools/hashcat/): Crack password hashes with a wordlist, brute force, or a combination.
   - **Common Flags**
   - -m: Hash Type - Select what type of hash to crack. 0 is an MD5 hash and is most common in NCL. ( -m 0)
   - -a: Attack Mode - Select what type of attack. 0 is a dictionary attack and is most common in NCL. (-a 0)
   - -o: Output - Select what file to output results to. (-O cracked.txt)
   - Example command: `hashcat -m 0 -a 0 -o cracked.txt target_hashes.txt wordlist.txt`
+  - **Word Lists**: Many wordlists can be found in every kali install in `/usr/share/wordlists/`
+  - **Rule Lists**: Google for the following rule lists
+    - dive.rule
+    - HoboRules
+    - NSARules
+    - OneRuleToRuleThemAll
 - [Ophcrack](https://ophcrack.sourceforge.io/): Used to crack windows NTLM hashes. 
   - Download ophcrack [here](https://ophcrack.sourceforge.io/download.php?type=ophcrack)
   - Download table [here](https://ophcrack.sourceforge.io/tables.php): Most password for NCL are found in XP Free Small or XP Free Special.
+-[CeWL](https://www.kali.org/tools/cewl/): CeWL (Cust Word List generator) is used to crawl a website an make a list of words that can be used for cracking a password. 
 - [John the Ripper](https://www.kali.org/tools/john/): Used similarly to hashcat. John the Ripper is used to crack password hashes. I am not familiar with John the Ripper amd prefer hashcat so, I will not offer much of a guide on it.
 
 ## Log Analysis
+- [cat](https://www.geeksforgeeks.org/cat-command-in-linux-with-examples/): Used to read the contets of a file `cat example.txt`
 - [grep](https://www.geeksforgeeks.org/grep-command-in-unixlinux/): Search for strings or regular expressions to find information in a log. Regular expressions can be a great way to find specific information. But, they can be tricky.
   - **Common Flags**
   - -E: Use regular expressions [Cheat Sheet](https://ryanstutorials.net/linuxtutorial/cheatsheetgrep.php)
@@ -41,6 +54,10 @@ A list of resources that are useful for the National Cyber League Competition. T
   - Mix and match flags on consecutive grep statements to fine tune what you are looking for
   - **Example**: `cat log.log | grep -i "user" | grep -iv "invalid" | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}"`
   - **Explanation**: cat the log file and look for any line that contains the word "user" regardless of case to find any line that contains a usernam. Then, grep for anyline that says "invalid" and select only lines that do not match to sort out invalid user attempts. Finally, that last regular expression searches for IP addresses and only outputs the IP address.
+- [cut](https://www.geeksforgeeks.org/cut-command-linux-examples/): Cut is used to split a line in bash. 
+  - **Common Flags**;
+  - -d: Specify a delimter
+  - -f: Select which part of a cut you want to select
 - [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/): Sort lines in alphabetical order.
 - [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/#:~:text=The%20uniq%20command%20in%20Linux,also%20deletes%20the%20duplicate%20lines.): Remove adjacent duplicate lines. It is important to sort the lines before doing this so that all duplicates are removed 
   - `cat log.txt | sort | -uniq`
@@ -57,10 +74,12 @@ A list of resources that are useful for the National Cyber League Competition. T
 
 ## Network Traffic Analysis
 - [Wireshark](https://www.kali.org/tools/wireshark/): Open, filter, and analyze pcap files.
+  - [Plugins](https://www.wireshark.org/docs/wsug_html_chunked/ChPluginFolders.html): You can install additional plugins to extend the capabilities of Wireshark. For example, there is an h264 extractor to extract MP4 data from RTP packets and an ffmpeg plugin to reassemble media. 
 - [AircapNG](https://www.kali.org/tools/aircrack-ng/#:~:text=aircrack%2Dng%20is%20an%20802.11,or%20simply%20by%20brute%20force.): Analyze wireless traffic and extract the password from unencryptes 802.11 traffic.
   - Run `aircrack-ng wifi.pcap` to show the wifi password
 
 ## Forensics
+- [EXIF](https://exif.tools/): Exif tools can help reveal file meta data that helps identify what a file is and where it came from.
 - [Autopsy](https://www.kali.org/tools/autopsy/): Great for analyzing disk images and extracting files from a disc image.
   - [This](https://lepouvoirclapratique.com/blog/wp-content/uploads/2018/02/Tutorial_6_-_Kali_Linux_-_Sleuthkit.pdf) is a great walkthrough to get started with autopsy.
 
@@ -92,6 +111,7 @@ A list of resources that are useful for the National Cyber League Competition. T
   - [Proxy](https://portswigger.net/burp/documentation/desktop/tools/proxy/getting-started#:~:text=Burp%20Proxy%20lies%20at%20the,traffic%20passing%20in%20both%20directions.): Proxy your web traffic through Burp and analyze what is happening
   - [Repeater](https://portswigger.net/burp/documentation/desktop/tools/repeater/using): After intercepting traffic in the proxy, got to "Actions" > "Send to Repeater" to use the repeater with a web request. You can view, modify, and send web requests to the server, and catch the response so that you can analyze how the web server is working. 
   - [HTTP History](https://portswigger.net/burp/documentation/desktop/tools/proxy/history/getting-started-http-history#:~:text=The%20HTTP%20history%20tab%20displays,useful%20parameters%20and%20other%20inputs.): This is a list of all the URLs that have been sent through the proxy. This can let you see what resources are being requested and look for any interesting or anomalous requests. 
+- [Postman](https://www.postman.com/downloads/): Postman helps create and repeate API calls. This can help get information out of a server anv easily view what the server is sending back. It is easy to save API calls for later to rerun or modify after you discover more information. 
 - [Exploit DB](https://www.exploit-db.com/): Once you know what services or what OS is running on a server, look that up in Exploit DB and see what vulnerabilities may exist that you can take advantage of. 
 - [Metasploit](https://docs.rapid7.com/metasploit/getting-started/): Metasploit is very versitile and can help with many problems. Once you understand the server, what is running on it, and what vulnerabilities it may have, jump into Metasploit and see if there are any modules that may be helpful. 
 
@@ -103,3 +123,6 @@ A list of resources that are useful for the National Cyber League Competition. T
   - [Python Decompiler Online](https://www.toolnb.com/tools-lang-en/pyc.html)
   - [Java Decompiler Online](http://www.javadecompilers.com/)
 - [Ghidra](https://www.kalilinux.in/2021/06/ghidra-reverse-engineering-kali-linux.html): Ghidra is a tool that was developed by the NSA to reverse engineer software. Now it is open source and comes installed on every instance of kali linux. It procides a lot of good information but it can be difficult to understand. 
+
+## Other Tips
+- If I don't know how to do a challenge, I type in the name and append 'CTF' at the end. Sometime it'll return a writeup of a similar challenge done in a CTF that helps complete the challenge. -Ed
