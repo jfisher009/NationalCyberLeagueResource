@@ -62,7 +62,7 @@ A list of resources that are useful for the National Cyber League Competition. T
   - -f: Select which part of a cut you want to select
 - [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/): Sort lines in alphabetical order.
 - [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/#:~:text=The%20uniq%20command%20in%20Linux,also%20deletes%20the%20duplicate%20lines.): Remove adjacent duplicate lines. It is important to sort the lines before doing this so that all duplicates are removed 
-  - `cat log.txt | sort | -uniq`
+  - `cat log.txt | sort | uniq`
   - **Common Flags**
   - -c: Return the count of how many duplicate lines there were of each type
 - [wc](https://www.geeksforgeeks.org/wc-command-linux-examples/#:~:text=wc%20stands%20for%20word%20count,specified%20in%20the%20file%20arguments.): Return the word count of a file. 
