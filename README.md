@@ -10,13 +10,15 @@ A list of resources that are useful for the National Cyber League Competition. T
 
 ## Cryptography
 - [CyberChef](https://gchq.github.io/CyberChef/): Convert between number bases and encoding schemes
+- [Cryptii](https://cryptii.com/): Similar to CyberChef but it has some other options that may be useful. 
 - [Rumkin](https://rumkin.com/tools/cipher/rail-fence/): Encode/Decode railfence ciphers
 - [dcode.fr](https://www.dcode.fr/en) Encode/Decode many ciphers. This website is usually one of the first sites on google when you google for a specific cipher.
 - [Cipher Identifier](https://www.boxentriq.com/code-breaking/cipher-identifier): Some websites can help you identify waht cipher is being used on a given cipher text. There are many good options. But, I have attached one here. 
 - [Strings](https://www.howtogeek.com/427805/how-to-use-the-strings-command-on-linux/) The linux strings command will search through any file type and return strings of characters it found. Useful for finding flags in arbitrary file types. 
 - [Digital Invisible Ink Toolkit](https://diit.sourceforge.net/): Find messages that are hidden in pictures. Many steganography questions use this tool.
 - [Steghide](https://www.kali.org/tools/steghide/): Another way to find messages hidden in a picture.
-  - Command to extract message: `steghide -sF \<filename\>`
+  - Command to extract message: `steghide -sF <filename>`
+- [Binwalk](https://www.kali.org/tools/binwalk/): Binwalk is used to extract files that are hidden in another file. Run `binwalk --dd='.*' <filename>` to extract all hidden files.
 
 ## Password Cracking
 - [Hash Generator](https://www.browserling.com/tools/all-hashes): You will probably be asked to compute the hashes of some passwords. This site generates many hashes all at once. Select what you need and paste it into the answer box. 
@@ -95,9 +97,9 @@ A list of resources that are useful for the National Cyber League Competition. T
 - [Dirbuster](https://www.kali.org/tools/dirbuster/): Dirbuster is used to brute force directories on a web server. It is super simple to use and quick to get going.
 - [Wappalyzer](https://www.wappalyzer.com/): Wappalyzer is a browser extention that allows you to 
 - [Netcat](https://allabouttesting.org/netcat-tutorial-for-beginners/): Netcat can be used to connect to a remote machine and enumerate what is running on that machine.
-  - To connect to a machine run `nc \<hostname orIP\> \<port num\>`
+  - To connect to a machine run `nc <hostname orIP> <port num>`
 - [Telnet](https://www.process.com/docs/tcpware6_1/users/chapter_12.html](https://www.javatpoint.com/linux-telnet-command ): Like netcat, telnet is used to connect to a remote computer. Once you are connected, you can send the computer commands and try to figure out what it is running. 
-  - To connect to a remote machine run `telnet \<hostname orIP\> \<port num\>`
+  - To connect to a remote machine run `telnet <hostname or IP> <port num>`
 - [Metasploit](https://docs.rapid7.com/metasploit/getting-started/): Metasploit is not just for hacking. There are a lot of good tools for scanning and recon as well. For instance, the ftp_version module allows you to find what version of an ftp server a server is running. No hacking required!
 
 ## Web Application Exploitation
@@ -112,8 +114,10 @@ A list of resources that are useful for the National Cyber League Competition. T
   - [Repeater](https://portswigger.net/burp/documentation/desktop/tools/repeater/using): After intercepting traffic in the proxy, got to "Actions" > "Send to Repeater" to use the repeater with a web request. You can view, modify, and send web requests to the server, and catch the response so that you can analyze how the web server is working. 
   - [HTTP History](https://portswigger.net/burp/documentation/desktop/tools/proxy/history/getting-started-http-history#:~:text=The%20HTTP%20history%20tab%20displays,useful%20parameters%20and%20other%20inputs.): This is a list of all the URLs that have been sent through the proxy. This can let you see what resources are being requested and look for any interesting or anomalous requests. 
 - [Postman](https://www.postman.com/downloads/): Postman helps create and repeate API calls. This can help get information out of a server anv easily view what the server is sending back. It is easy to save API calls for later to rerun or modify after you discover more information. 
+-[sqlmap](SQLMap): sqlmap is used to automatically detect and exploit sql injection vulnerabilities.
 - [Exploit DB](https://www.exploit-db.com/): Once you know what services or what OS is running on a server, look that up in Exploit DB and see what vulnerabilities may exist that you can take advantage of. 
 - [Metasploit](https://docs.rapid7.com/metasploit/getting-started/): Metasploit is very versitile and can help with many problems. Once you understand the server, what is running on it, and what vulnerabilities it may have, jump into Metasploit and see if there are any modules that may be helpful. 
+- [HackBar](https://chrome.google.com/webstore/detail/hackbar/ginpbkfigcoaokgflihfhhmglmbchinc?hl=en): hackBar is a browser extention that adds some extra fucntions to the developer tools to help with XSS, LFI, and other vulnerabilities. I have not used this. It looks interesting, though. 
 
 ## Enumeration & Exploitation
 - [Ascii Table](https://www.asciitable.com/): Many enumeration and exploitation questions use ascii in some way. So, knowing how to decode ascii is an important skill. 
