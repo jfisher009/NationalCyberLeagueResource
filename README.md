@@ -13,7 +13,7 @@ A list of resources that are useful for the National Cyber League Competition. T
 - [Strings](https://www.howtogeek.com/427805/how-to-use-the-strings-command-on-linux/) The linux strings command will search through any file type and return strings of characters it found. Useful for finding flags in arbitrary file types. 
 - [Digital Invisible Ink Toolkit](https://diit.sourceforge.net/): Find messages that are hidden in pictures. Many steganography questions use this tool.
 - [Steghide](https://www.kali.org/tools/steghide/): Another way to find messages hidden in a picture.
-  - Command to extract message: steghide -sF \<filename\>
+  - Command to extract message: `steghide -sF \<filename\>`
 
 ## Password Cracking
 - [Hash Generator](https://www.browserling.com/tools/all-hashes): You will probably be asked to compute the hashes of some passwords. This site generates many hashes all at once. Select what you need and paste it into the answer box. 
@@ -23,7 +23,7 @@ A list of resources that are useful for the National Cyber League Competition. T
   - -m: Hash Type - Select what type of hash to crack. 0 is an MD5 hash and is most common in NCL. ( -m 0)
   - -a: Attack Mode - Select what type of attack. 0 is a dictionary attack and is most common in NCL. (-a 0)
   - -o: Output - Select what file to output results to. (-O cracked.txt)
-  - Example command: hashcat -m 0 -a 0 -o cracked.txt target_hashes.txt wordlist.txt
+  - Example command: `hashcat -m 0 -a 0 -o cracked.txt target_hashes.txt wordlist.txt`
 - [Ophcrack](https://ophcrack.sourceforge.io/): Used to crack windows NTLM hashes. 
   - Download ophcrack [here](https://ophcrack.sourceforge.io/download.php?type=ophcrack)
   - Download table [here](https://ophcrack.sourceforge.io/tables.php): Most password for NCL are found in XP Free Small or XP Free Special.
@@ -40,10 +40,10 @@ A list of resources that are useful for the National Cyber League Competition. T
   - Pipe the output from one grep statement into another grep statement. This way you can filter down data in stages understand what you are doing.
   - Mix and match flags on consecutive grep statements to fine tune what you are looking for
   - **Example**
-  - cat log.log | grep -i "user" | grep -iv "invalid" | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}"
+  - `cat log.log | grep -i "user" | grep -iv "invalid" | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}"`
   - Explanation: cat the log file and look for any line that contains the word "user" regardless of case to find any line that contains a usernam. Then, grep for anyline that says "invalid" and select only lines that do not match to sort out invalid user attempts. Finally, that last regular expression searches for IP addresses and only outputs the IP address.
 - [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/): Sort lines in alphabetical order.
-- [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/#:~:text=The%20uniq%20command%20in%20Linux,also%20deletes%20the%20duplicate%20lines.): Remove adjacent duplicate lines. It is important to sort the lines before doing this so that all duplicates are removed (cat log.txt | sort | -uniq)
+- [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/#:~:text=The%20uniq%20command%20in%20Linux,also%20deletes%20the%20duplicate%20lines.): Remove adjacent duplicate lines. It is important to sort the lines before doing this so that all duplicates are removed `cat log.txt | sort | -uniq`
   - **Common Flags**
   - -c: Return the count of how many duplicate lines there were of each type
 - [wc](https://www.geeksforgeeks.org/wc-command-linux-examples/#:~:text=wc%20stands%20for%20word%20count,specified%20in%20the%20file%20arguments.): Return the word count of a file. 
@@ -58,7 +58,7 @@ A list of resources that are useful for the National Cyber League Competition. T
 ## Network Traffic Analysis
 - [Wireshark](https://www.kali.org/tools/wireshark/): Open, filter, and analyze pcap files.
 - [AircapNG](https://www.kali.org/tools/aircrack-ng/#:~:text=aircrack%2Dng%20is%20an%20802.11,or%20simply%20by%20brute%20force.): Analyze wireless traffic and extract the password from unencryptes 802.11 traffic.
-  - Run "aircrack-ng wifi.pcap" to show the wifi password (NEEDS TESTED
+  - Run `aircrack-ng wifi.pcap` to show the wifi password (NEEDS TESTED
 
 ## Forensics
 - [Autopsy](https://www.kali.org/tools/autopsy/): Great for analyzing disk images and extracting files from a disc image.
@@ -76,9 +76,9 @@ A list of resources that are useful for the National Cyber League Competition. T
 - [Dirbuster](https://www.kali.org/tools/dirbuster/): Dirbuster is used to brute force directories on a web server. It is super simple to use and quick to get going.
 - [Wappalyzer](https://www.wappalyzer.com/): Wappalyzer is a browser extention that allows you to 
 - [Netcat](https://allabouttesting.org/netcat-tutorial-for-beginners/): Netcat can be used to connect to a remote machine and enumerate what is running on that machine.
-  - To connect to a machine run "nc \<hostname orIP\> \<port num\>"
+  - To connect to a machine run `nc \<hostname orIP\> \<port num\>`
 - [Telnet](https://www.process.com/docs/tcpware6_1/users/chapter_12.html](https://www.javatpoint.com/linux-telnet-command ): Like netcat, telnet is used to connect to a remote computer. Once you are connected, you can send the computer commands and try to figure out what it is running. 
-  - To connect to a remote machine run "telnet \<hostname orIP\> \<port num\>"
+  - To connect to a remote machine run `telnet \<hostname orIP\> \<port num\>`
 - [Metasploit](https://docs.rapid7.com/metasploit/getting-started/): Metasploit is not just for hacking. There are a lot of good tools for scanning and recon as well. For instance, the ftp_version module allows you to find what version of an ftp server a server is running. No hacking required!
 
 ## Web Application Exploitation
