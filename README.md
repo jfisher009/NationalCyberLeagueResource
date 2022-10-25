@@ -42,7 +42,8 @@ A list of resources that are useful for the National Cyber League Competition. T
   - **Example**: `cat log.log | grep -i "user" | grep -iv "invalid" | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}"`
   - **Explanation**: cat the log file and look for any line that contains the word "user" regardless of case to find any line that contains a usernam. Then, grep for anyline that says "invalid" and select only lines that do not match to sort out invalid user attempts. Finally, that last regular expression searches for IP addresses and only outputs the IP address.
 - [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/): Sort lines in alphabetical order.
-- [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/#:~:text=The%20uniq%20command%20in%20Linux,also%20deletes%20the%20duplicate%20lines.): Remove adjacent duplicate lines. It is important to sort the lines before doing this so that all duplicates are removed `cat log.txt | sort | -uniq`
+- [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/#:~:text=The%20uniq%20command%20in%20Linux,also%20deletes%20the%20duplicate%20lines.): Remove adjacent duplicate lines. It is important to sort the lines before doing this so that all duplicates are removed 
+  - `cat log.txt | sort | -uniq`
   - **Common Flags**
   - -c: Return the count of how many duplicate lines there were of each type
 - [wc](https://www.geeksforgeeks.org/wc-command-linux-examples/#:~:text=wc%20stands%20for%20word%20count,specified%20in%20the%20file%20arguments.): Return the word count of a file. 
@@ -95,9 +96,10 @@ A list of resources that are useful for the National Cyber League Competition. T
 - [Metasploit](https://docs.rapid7.com/metasploit/getting-started/): Metasploit is very versitile and can help with many problems. Once you understand the server, what is running on it, and what vulnerabilities it may have, jump into Metasploit and see if there are any modules that may be helpful. 
 
 ## Enumeration & Exploitation
-- [Ascii Table]()
-- [Python]()
-- [Bash]()
-- [Python Decompiler]()
-- [Ghidra]()
-
+- [Ascii Table](https://www.asciitable.com/): Many enumeration and exploitation questions use ascii in some way. So, knowing how to decode ascii is an important skill. 
+- [Python](https://www.python.org/): Lots of the easy Enumeration & Exploitation problems use python. Understanding how to read and write python code is a good skill to have. 
+- [Bash](https://www.gnu.org/software/bash/): Same as above, except its Bash this time. Since Bash is used for the linux command line, it is used for many of the utilities mentioned in this document. So, you need to be familiar with this, and it is often seen in Enumeration & Exploitation problems. 
+- [Decompilers](https://en.wikipedia.org/wiki/Decompiler): Sometimes you will be given code that has already been compiled. A decompiler can take this compiled code and help us understand what it is doing.
+  - [Python Decompiler Online](https://www.toolnb.com/tools-lang-en/pyc.html)
+  - [Java Decompiler Online](http://www.javadecompilers.com/)
+- [Ghidra](https://www.kalilinux.in/2021/06/ghidra-reverse-engineering-kali-linux.html): Ghidra is a tool that was developed by the NSA to reverse engineer software. Now it is open source and comes installed on every instance of kali linux. It procides a lot of good information but it can be difficult to understand. 
