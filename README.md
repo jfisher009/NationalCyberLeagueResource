@@ -58,20 +58,42 @@ A list of resources that are useful for the National Cyber League Competition. T
 ## Network Traffic Analysis
 - [Wireshark](https://www.kali.org/tools/wireshark/): Open, filter, and analyze pcap files.
 - [AircapNG](https://www.kali.org/tools/aircrack-ng/#:~:text=aircrack%2Dng%20is%20an%20802.11,or%20simply%20by%20brute%20force.): Analyze wireless traffic and extract the password from unencryptes 802.11 traffic.
-  - MORE NEEDED
+  - Run "aircrack-ng wifi.pcap" to show the wifi password (NEEDS TESTED
 
 ## Forensics
-- [Autopsy]()
+- [Autopsy](https://www.kali.org/tools/autopsy/): Great for analyzing disk images and extracting files from a disc image.
+  - [This](https://lepouvoirclapratique.com/blog/wp-content/uploads/2018/02/Tutorial_6_-_Kali_Linux_-_Sleuthkit.pdf) is a great walkthrough to get started with autopsy.
 
 ## Scanning & Reconnaissance
-- [Nmap]()
-- [Dirbuster]()
-- [Netcat]()
-- [Telnet]()
+- [Nmap](https://nmap.org/book/man.html): Nmap is a great resource for enumerating open ports and what services are running on them. Nmap is an important tool and you should be very familiar with it for any CTF event.
+  - **Commmon Flags**
+  - -sV: Enable version detection
+  - -sC: Run with standard scripts
+  - -Pn: Do not ping - run scan even if the host looks like it is down
+  - -p: Specify a port or port range (-p 8090, -p 100-1123, etc)
+  - -O: Enable OS detection
+  - Nmap Cheat Sheet [here](https://www.stationx.net/nmap-cheat-sheet/)
+- [Dirbuster](https://www.kali.org/tools/dirbuster/): Dirbuster is used to brute force directories on a web server. It is super simple to use and quick to get going.
+- [Wappalyzer](https://www.wappalyzer.com/): Wappalyzer is a browser extention that allows you to 
+- [Netcat](https://allabouttesting.org/netcat-tutorial-for-beginners/): Netcat can be used to connect to a remote machine and enumerate what is running on that machine.
+  - To connect to a machine run "nc \<hostname orIP\> \<port num\>"
+- [Telnet](https://www.process.com/docs/tcpware6_1/users/chapter_12.html](https://www.javatpoint.com/linux-telnet-command ): Like netcat, telnet is used to connect to a remote computer. Once you are connected, you can send the computer commands and try to figure out what it is running. 
+  - To connect to a remote machine run "telnet \<hostname orIP\> \<port num\>"
+- [Metasploit](https://docs.rapid7.com/metasploit/getting-started/): Metasploit is not just for hacking. There are a lot of good tools for scanning and recon as well. For instance, the ftp_version module allows you to find what version of an ftp server a server is running. No hacking required!
 
 ## Web Application Exploitation
-- [Burp Suite]()
-- [Metasploit]()
+- [Web Browser](https://www.webdevelopersnotes.com/browsers-list): There are many web browsers out there. Pick one and start exploring the website. Knowing how the website functions normally can help you understand where vulnerabilities may exist. 
+- [Developer Tools](https://nira.com/chrome-developer-tools/): Hit F12 or right click and inspect a web page to view the developer tools that are available in any browser. This lets you see the 
+  - **Dev Tool Tips**
+  - Read the HTML carefully. Hints are usually hidden in the HTML, especially in earlier challenges.
+  - Pay attention to the network tab and understand what requests are being made. 
+  - Look at the cookies! Cookies can be found under teh application tab. Often times, a challenge can be completed by just changing a cookie value. 
+- [Burp Suite](https://portswigger.net/burp/documentation/desktop/penetration-testing): Burp Suite is a great tool for figuring out how a website works and hacking into it. Burp Suite has many capabilities. So, the most important features are briefly discussed below.
+  - [Proxy](https://portswigger.net/burp/documentation/desktop/tools/proxy/getting-started#:~:text=Burp%20Proxy%20lies%20at%20the,traffic%20passing%20in%20both%20directions.): Proxy your web traffic through Burp and analyze what is happening
+  - [Repeater](https://portswigger.net/burp/documentation/desktop/tools/repeater/using): After intercepting traffic in the proxy, got to "Actions" > "Send to Repeater" to use the repeater with a web request. You can view, modify, and send web requests to the server, and catch the response so that you can analyze how the web server is working. 
+  - [HTTP History](https://portswigger.net/burp/documentation/desktop/tools/proxy/history/getting-started-http-history#:~:text=The%20HTTP%20history%20tab%20displays,useful%20parameters%20and%20other%20inputs.): This is a list of all the URLs that have been sent through the proxy. This can let you see what resources are being requested and look for any interesting or anomalous requests. 
+- [Exploit DB](https://www.exploit-db.com/): Once you know what services or what OS is running on a server, look that up in Exploit DB and see what vulnerabilities may exist that you can take advantage of. 
+- [Metasploit](https://docs.rapid7.com/metasploit/getting-started/): Metasploit is very versitile and can help with many problems. Once you understand the server, what is running on it, and what vulnerabilities it may have, jump into Metasploit and see if there are any modules that may be helpful. 
 
 ## Enumeration & Exploitation
 - [Ascii Table]()
