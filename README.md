@@ -40,7 +40,7 @@ A list of resources that are useful for the National Cyber League Competition. T
 - [Ophcrack](https://ophcrack.sourceforge.io/): Used to crack windows NTLM hashes. 
   - Download ophcrack [here](https://ophcrack.sourceforge.io/download.php?type=ophcrack)
   - Download table [here](https://ophcrack.sourceforge.io/tables.php): Most password for NCL are found in XP Free Small or XP Free Special.
-- [CeWL](https://www.kali.org/tools/cewl/): CeWL (Cust Word List generator) is used to crawl a website an make a list of words that can be used for cracking a password. 
+- [CeWL](https://www.kali.org/tools/cewl/): CeWL (Custom Word List generator) is used to crawl a website an make a list of words that can be used for cracking a password. 
 - [John the Ripper](https://www.kali.org/tools/john/): Used similarly to hashcat. John the Ripper is used to crack password hashes. I am not familiar with John the Ripper amd prefer hashcat so, I will not offer much of a guide on it.
 
 ## Log Analysis
