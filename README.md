@@ -2,7 +2,7 @@
 A list of resources that are useful for the National Cyber League Competition. This list was compiled with the help of many members of the Drury Cyber Defense Team.
 
 ## Open Source Inteligence
-- [Google](google.com){:target="_blank"}: Google should almost always be your first stop for OSINT questions. 
+- [Google](google.com): Google should almost always be your first stop for OSINT questions. 
   - Get familiar with Google's more advanced search operators. [Here](https://static.semrush.com/blog/uploads/files/39/12/39121580a18160d3587274faed6323e2.pdf) is a handy cheat sheet.
   - Google reverse image search is another great tool to help track down photos.
 - [Wigle](wigle.net): Find and identify wifi networks. 
