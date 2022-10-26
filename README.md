@@ -43,7 +43,10 @@ A list of resources that are useful for the National Cyber League Competition. T
   - Download ophcrack [here](https://ophcrack.sourceforge.io/download.php?type=ophcrack)
   - Download table [here](https://ophcrack.sourceforge.io/tables.php): Most password for NCL are found in XP Free Small or XP Free Special.
 - [CeWL](https://www.kali.org/tools/cewl/): CeWL (Custom Word List generator) is used to crawl a website an make a list of words that can be used for cracking a password. 
-- [John the Ripper](https://www.kali.org/tools/john/): Used similarly to hashcat. John the Ripper is used to crack password hashes. I am not familiar with John the Ripper amd prefer hashcat so, I will not offer much of a guide on it.
+- [John the Ripper](https://www.kali.org/tools/john/): Used similarly to hashcat. John the Ripper is used to crack password hashes. I am not familiar with John the Ripper amd prefer hashcat so, I will not offer much of a guide on it
+- [Mentalist](https://en.kali.tools/?p=1310): Generate large wordlists based on a dictionary, or create rules for hashcat or John the Ripper.
+- [Hydra](https://www.kali.org/tools/hydra/): Brute force server passwords and try to connect.
+- [SecLists](https://github.com/danielmiessler/SecLists): GitHub repo with great wordlists and lots of other hacking goodies.
 
 ## Log Analysis
 - [cat](https://www.geeksforgeeks.org/cat-command-in-linux-with-examples/): Used to read the contets of a file `cat example.txt`
@@ -81,6 +84,7 @@ A list of resources that are useful for the National Cyber League Competition. T
   - [Plugins](https://www.wireshark.org/docs/wsug_html_chunked/ChPluginFolders.html): You can install additional plugins to extend the capabilities of Wireshark. For example, there is an h264 extractor to extract MP4 data from RTP packets and an ffmpeg plugin to reassemble media. 
 - [AircapNG](https://www.kali.org/tools/aircrack-ng/#:~:text=aircrack%2Dng%20is%20an%20802.11,or%20simply%20by%20brute%20force.): Analyze wireless traffic and extract the password from unencryptes 802.11 traffic.
   - Run `aircrack-ng wifi.pcap` to show the wifi password
+- [Zeek](https://docs.zeek.org/en/master/): Zeek is a very powerful  open-source network traffic analyzer. 
 
 ## Forensics
 - [EXIF](https://exif.tools/): Exif tools can help reveal file meta data that helps identify what a file is and where it came from.
