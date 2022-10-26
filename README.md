@@ -4,7 +4,9 @@ A list of resources that are useful for the National Cyber League Competition. T
 ## Open Source Inteligence
 - [Google](google.com): Google should almost always be your first stop for OSINT questions. 
   - Get familiar with Google's more advanced search operators. [Here](https://static.semrush.com/blog/uploads/files/39/12/39121580a18160d3587274faed6323e2.pdf) is a handy cheat sheet.
-  - Google reverse image search is another great tool to help track down photos.
+  - [Google reverse image search](https://www.google.com/imghp?hl=EN) is another great tool to help track down photos.
+  - [Google Maps](https://www.google.com/maps) is great for tracking down buildings
+  - [Google Earth](https://earth.google.com/web/) is cool, too
 - [Wigle](wigle.net): Find and identify wifi networks. 
 - [EXIF](https://exif.tools/): Exif tools can help reveal file meta data that can give answers out for easy OSINT questions.
 
