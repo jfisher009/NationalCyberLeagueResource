@@ -76,7 +76,8 @@ A list of resources that are useful for the National Cyber League Competition. T
   - -w: Count the number of bytes in the file
   - -m: Count the number of characters in the file
 - [awk](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/): Awk can be used to scan over files and pull information out by selecting certain fields. Awk is a little more complex than grep but is extremely maleable to do complex analysis. 
-- [Excel](https://www.sans.org/white-papers/37745/): Excel can be a great resource to analyze log files quickly. Import a log as a csv file, and change the delimiter to something that makes sense for the log you are looking at. 
+- [Excel](https://www.sans.org/white-papers/37745/): Excel can be a great resource to analyze log files quickly. Import a log as a csv file, and change the delimiter to something that makes sense for the log you are looking at.
+- [VS Code](https://code.visualstudio.com/download): Any text editor can be good to view the data and start to understand what you are looking at. 
 - [Python](https://www.pythontutorial.net/python-basics/python-read-text-file/#:~:text=To%20read%20a%20text%20file%20in%20Python%2C%20you%20follow%20these,the%20file%20close()%20method.): Python has amazing utilities to read and write text files. Python can be used for more complex analysis of many log files. 
 
 ## Network Traffic Analysis
@@ -137,3 +138,4 @@ A list of resources that are useful for the National Cyber League Competition. T
 ## Other Tips
 - If I don't know how to do a challenge, I type in the name and append 'CTF' at the end. Sometime it'll return a writeup of a similar challenge done in a CTF that helps complete the challenge. -Ed
 - Pay close attention to the title of the challenge. It's usually a hint at how to solve the problem. - Julian
+- When I'm stuck on a challenge, I often go look at the gymnasium again to see if there are any tips or tools they list in the gym that might help me. - Jacob
