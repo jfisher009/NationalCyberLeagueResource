@@ -102,6 +102,7 @@ A list of resources that are useful for the National Cyber League Competition. T
   - -O: Enable OS detection
   - Nmap Cheat Sheet [here](https://www.stationx.net/nmap-cheat-sheet/)
 - [Dirbuster](https://www.kali.org/tools/dirbuster/): Dirbuster is used to brute force directories on a web server. It is super simple to use and quick to get going.
+- [Gobuster](https://www.kali.org/tools/gobuster/): Similar to dirbuster, used to scan for directories on a web server
 - [Wappalyzer](https://www.wappalyzer.com/): Wappalyzer is a browser extention that allows you to 
 - [Netcat](https://allabouttesting.org/netcat-tutorial-for-beginners/): Netcat can be used to connect to a remote machine and enumerate what is running on that machine.
   - To connect to a machine run `nc <hostname orIP> <port num>`
