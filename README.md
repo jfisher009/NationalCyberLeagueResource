@@ -17,7 +17,7 @@ A list of resources that are useful for the National Cyber League Competition. T
 - [Rumkin](https://rumkin.com/tools/cipher/rail-fence/): Encode/Decode railfence ciphers
 - [dcode.fr](https://www.dcode.fr/en) Encode/Decode many ciphers. This website is usually one of the first sites on google when you google for a specific cipher.
 - [Cipher Identifier](https://www.boxentriq.com/code-breaking/cipher-identifier): Some websites can help you identify waht cipher is being used on a given cipher text. There are many good options. But, I have attached one here. 
-- [Strings](https://www.howtogeek.com/427805/how-to-use-the-strings-command-on-linux/) The linux strings command will search through any file type and return strings of characters it found. Useful for finding flags in arbitrary file types. 
+- [Strings](https://www.howtogeek.com/427805/how-to-use-the-strings-command-on-linux/): The linux strings command will search through any file type and return strings of characters it found. Useful for finding flags in arbitrary file types. 
 - [Digital Invisible Ink Toolkit](https://diit.sourceforge.net/): Find messages that are hidden in pictures. Many steganography questions use this tool.
 - [Steghide](https://www.kali.org/tools/steghide/): Another way to find messages hidden in a picture.
   - Command to extract message: `steghide -sF <filename>`
