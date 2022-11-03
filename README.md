@@ -127,7 +127,6 @@ A list of resources that are useful for the National Cyber League Competition. T
 - [sqlmap](SQLMap): sqlmap is used to automatically detect and exploit sql injection vulnerabilities.
 - [Exploit DB](https://www.exploit-db.com/): Once you know what services or what OS is running on a server, look that up in Exploit DB and see what vulnerabilities may exist that you can take advantage of. 
 - [Metasploit](https://docs.rapid7.com/metasploit/getting-started/): Metasploit is very versitile and can help with many problems. Once you understand the server, what is running on it, and what vulnerabilities it may have, jump into Metasploit and see if there are any modules that may be helpful. 
-- [HackBar](https://chrome.google.com/webstore/detail/hackbar/ginpbkfigcoaokgflihfhhmglmbchinc?hl=en): hackBar is a browser extention that adds some extra fucntions to the developer tools to help with XSS, LFI, and other vulnerabilities. I have not used this. It looks interesting, though. 
 
 ## Enumeration & Exploitation
 - [Ascii Table](https://www.asciitable.com/): Many enumeration and exploitation questions use ascii in some way. So, knowing how to decode ascii is an important skill. 
