@@ -9,6 +9,7 @@ A list of resources that are useful for the National Cyber League Competition. T
   - [Google Earth](https://earth.google.com/web/) is cool, too
 - [Wigle](wigle.net): Find and identify wifi networks. 
 - [EXIF](https://exif.tools/): Exif tools can help reveal file meta data that can give answers out for easy OSINT questions.
+- [OSINT Framework](https://osintframework.com/): Lots of OSINT tools sorted by category.
 
 ## Cryptography
 - [CyberChef](https://gchq.github.io/CyberChef/): Convert between number bases and encoding schemes
@@ -86,6 +87,7 @@ A list of resources that are useful for the National Cyber League Competition. T
 - [AircapNG](https://www.kali.org/tools/aircrack-ng/#:~:text=aircrack%2Dng%20is%20an%20802.11,or%20simply%20by%20brute%20force.): Analyze wireless traffic and extract the password from unencryptes 802.11 traffic.
   - Run `aircrack-ng wifi.pcap` to show the wifi password
 - [Zeek](https://docs.zeek.org/en/master/): Zeek is a very powerful  open-source network traffic analyzer. 
+- [Capture Passwords with Wireshark](https://www.infosecmatter.com/capture-passwords-using-wireshark/): A neat walkthrough on how to find passwords for many different protocols using Wireshark.
 
 ## Forensics
 - [EXIF](https://exif.tools/): Exif tools can help reveal file meta data that helps identify what a file is and where it came from.
