@@ -93,6 +93,7 @@ A list of resources that are useful for the National Cyber League Competition. T
 - [EXIF](https://exif.tools/): Exif tools can help reveal file meta data that helps identify what a file is and where it came from.
 - [Autopsy](https://www.kali.org/tools/autopsy/): Great for analyzing disk images and extracting files from a disc image.
   - [This](https://lepouvoirclapratique.com/blog/wp-content/uploads/2018/02/Tutorial_6_-_Kali_Linux_-_Sleuthkit.pdf) is a great walkthrough to get started with autopsy.
+- [FTK Imager](https://www.exterro.com/ftk-imager#:~:text=FTK%C2%AE%20Imager%20is%20a,(FTK%C2%AE)%20is%20warranted): Used to disect forensic images. 
 
 ## Scanning & Reconnaissance
 - [Nmap](https://nmap.org/book/man.html): Nmap is a great resource for enumerating open ports and what services are running on them. Nmap is an important tool and you should be very familiar with it for any CTF event.
@@ -136,6 +137,7 @@ A list of resources that are useful for the National Cyber League Competition. T
   - [Python Decompiler Online](https://www.toolnb.com/tools-lang-en/pyc.html)
   - [Java Decompiler Online](http://www.javadecompilers.com/)
 - [Ghidra](https://www.kalilinux.in/2021/06/ghidra-reverse-engineering-kali-linux.html): Ghidra is a tool that was developed by the NSA to reverse engineer software. Now it is open source and comes installed on every instance of kali linux. It procides a lot of good information but it can be difficult to understand. 
+- [GNU Debugger](www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf): GDB is used to step through code and is used primarily for debugging. But, it can be used to understand code that has already been compiled.
 
 ## Other Tips
 - If I don't know how to do a challenge, I type in the name and append 'CTF' at the end. Sometime it'll return a writeup of a similar challenge done in a CTF that helps complete the challenge. -Ed
